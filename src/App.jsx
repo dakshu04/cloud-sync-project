@@ -1,10 +1,15 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Bottom } from './components/Bottom'
-import { Hero } from './components/Hero'
+import { Hero } from './components/HeroComponents/Hero'
 import { Navbar } from './components/Navbar'
+import { Features } from './Pages/Features';
+import { Contact } from './Pages/Contact';
+import { Integrations } from './Pages/Integrations';
+import { Pricing } from './Pages/Pricing';
 
-function App() {
+function App() {  
 
 
   return (
@@ -14,7 +19,15 @@ function App() {
         <div className='flex sticky z-50 text-white'>
           <Navbar />
         </div>
-          <Hero />
+
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/integrations" element={<Integrations />} />
+          <Route path="/pricing" element={<Pricing />} />
+        </Routes>
+        
           <Bottom />
       </div>
     </>
