@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTheme } from "./ThemeContext";
 export const Navbar = () => {
   // const [darkMode, setDarkMode] = useState(false)
   const { darkMode, setDarkMode } = useTheme()
-  
+  const navigate = useNavigate()
+
   return (
     // <div  className={`fixed flex items-center justify-around top-4 left-10 right-10 z-50 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} transition duration-500 rounded-full px-6 py-3 shadow-lg`}>
     <div className="fixed flex items-center justify-around top-4 left-10 right-10 z-50" >
@@ -23,12 +24,13 @@ export const Navbar = () => {
       {/* Auth Buttons */}
       <div>
         <button onClick={() => setDarkMode(!darkMode)}
-      className={`px-4 py-2 rounded-full mr-2 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
-      }`}>
+          className={`px-4 py-2 rounded-full mr-2 ${
+          darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        }`}>
           {darkMode ? "☀️ Light" : "🌙 Dark"}
         </button>
         <button
+          onClick={() => navigate("/signup")}
           className={`mr-2 shadow-md px-4 py-2 rounded-full text-sm font-semibold cursor-pointer ${
             darkMode ? 'bg-gray-900 text-white'  : ' bg-white text-black'
           }`}>

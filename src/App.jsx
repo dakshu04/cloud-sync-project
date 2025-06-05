@@ -9,6 +9,7 @@ import { Contact } from './Pages/Contact';
 import { Integrations } from './Pages/Integrations';
 import { Pricing } from './Pages/Pricing';
 import { useTheme } from './components/ThemeContext'
+import { SignupForm } from './components/SignupForm'
 
 function App() {  
   const { darkMode } = useTheme()
@@ -27,6 +28,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/integrations" element={<Integrations />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/Signup" element={<SignupForm/>} />
+          {/* <Route path="/pricing" element={<SigninForm />} /> */}
         </Routes>
         
           <Bottom />
