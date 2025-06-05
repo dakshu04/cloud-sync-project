@@ -1,8 +1,8 @@
 export const Contact = () => {
     return (
         <>
-            <div>
-                <h1>Wecome to Contact Page</h1>
+            <div className="p-8">
+                <h1 className="text-2xl font-bold mb-4">Contact</h1>
             </div>
         </>
     )

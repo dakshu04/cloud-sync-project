@@ -1,9 +1,11 @@
+// import { useNavigate } from "react-router-dom";
+
 export const Pricing = () => {
-    return (
-        <>
-            <div>
-                <h1>Wecome to Pricing Page</h1>
-            </div>
-        </>
-    )
+//   const navigate = useNavigate();
+
+  return (
+    <div className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Pricing Plans</h1>
+    </div>
+  );
 }

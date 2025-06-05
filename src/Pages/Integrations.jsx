@@ -1,8 +1,8 @@
 export const Integrations = () => {
     return (
         <>
-            <div>
-                <h1>Wecome to Integrations Page</h1>
+            <div className="p-8">
+                <h1 className="text-2xl font-bold mb-4">Integrations</h1>
             </div>
         </>
     )
