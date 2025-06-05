@@ -11,7 +11,7 @@ export const Bottom = () => {
                     <span className="m-10">Bluepeak Solutions</span>
                     <span className="m-10">Tranzora</span>
                     <span className="m-10">Optivex Labs</span>
-                    <span className="m-10">H</span>
+                    <span className="m-10">Holixa</span>
                 </div>
             </div>
         </>
